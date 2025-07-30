@@ -49,23 +49,29 @@ function initializeFormEnhancements() {
             }
         });
 
-        // Form validation feedback
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            const submitBtn = form.querySelector('button[type="submit"]');
-            if (submitBtn) {
-                submitBtn.classList.add('btn-loading');
-                submitBtn.disabled = true;
+        // Form validation feedback - only for contact forms
+        const isContactForm = form.classList.contains('contact-form') || 
+                             (form.action && form.action.includes('/contact')) ||
+                             (form.querySelector('#message') && form.querySelector('#name') && form.querySelector('#email'));
+        
+        if (isContactForm) {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
                 
-                // Simulate form processing
-                setTimeout(() => {
-                    submitBtn.classList.remove('btn-loading');
-                    submitBtn.disabled = false;
-                    showToast('Votre message a été envoyé avec succès!', 'success');
-                }, 2000);
-            }
-        });
+                const submitBtn = form.querySelector('button[type="submit"]');
+                if (submitBtn) {
+                    submitBtn.classList.add('btn-loading');
+                    submitBtn.disabled = true;
+                    
+                    // Simulate form processing
+                    setTimeout(() => {
+                        submitBtn.classList.remove('btn-loading');
+                        submitBtn.disabled = false;
+                        showToast('Votre message a été envoyé avec succès !', 'success');
+                    }, 2000);
+                }
+            });
+        }
 
         // Real-time validation
         const inputs = form.querySelectorAll('input, textarea, select');

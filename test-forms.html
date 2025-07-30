@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test des Formulaires</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Test des Formulaires</h1>
+        
+        <!-- Formulaire de contact (devrait afficher le message) -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h3>Formulaire de Contact (doit afficher le message)</h3>
+            </div>
+            <div class="card-body">
+                <form class="contact-form" action="/contact" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nom</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Formulaire admin (ne doit PAS afficher le message) -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h3>Formulaire Admin (ne doit PAS afficher le message)</h3>
+            </div>
+            <div class="card-body">
+                <form action="/safir/services" method="POST">
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Titre</label>
+                        <input type="text" id="title" name="title" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Description</label>
+                        <textarea id="description" name="description" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Créer Service</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Formulaire login (ne doit PAS afficher le message) -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h3>Formulaire Login (ne doit PAS afficher le message)</h3>
+            </div>
+            <div class="card-body">
+                <form id="loginForm" action="/login" method="POST">
+                    <div class="mb-3">
+                        <label for="login-email" class="form-label">Email</label>
+                        <input type="email" id="login-email" name="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Mot de passe</label>
+                        <input type="password" id="password" name="password" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-warning">Se connecter</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Formulaire normal (ne doit PAS afficher le message) -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h3>Formulaire Normal (ne doit PAS afficher le message)</h3>
+            </div>
+            <div class="card-body">
+                <form action="/test" method="POST">
+                    <div class="mb-3">
+                        <label for="test-field" class="form-label">Champ Test</label>
+                        <input type="text" id="test-field" name="test" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Tester</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container position-fixed top-0 end-0 p-3"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('build/assets/app-Cj2d6VWT.js') }}"></script>
+</body>
+</html>

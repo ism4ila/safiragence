@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(php artisan:*)",
+      "Bash(composer:*)",
+      "WebFetch(domain:127.0.0.1)",
+      "Bash(xcopy:*)",
+      "Bash(mkdir:*)",
+      "Bash(find:*)",
+      "Bash(npm run build:*)",
+      "Bash(touch:*)",
+      "Bash(curl:*)",
+      "Bash(php:*)",
+      "Bash(rm:*)",
+      "Bash(pkill:*)",
+      "Bash(mv:*)",
+      "Bash(true)"
+    ],
+    "deny": []
+  }
+}
