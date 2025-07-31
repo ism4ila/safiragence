@@ -126,26 +126,7 @@
     </section>
     @endif
 
-    <!-- Section Témoignages -->
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-12 text-center mb-5">
-                <h2 class="fw-bold">Témoignages</h2>
-            </div>
-        </div>
-        <div class="row">
-            @foreach ($testimonials as $testimonial)
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="card-text">"{{ $testimonial->content }}"</p>
-                            <footer class="blockquote-footer">{{ $testimonial->client_name }}</footer>
-                        </div>
-                    </div>
-                </div>
-            @endforeach
-        </div>
-    </div>
+    
 
     <!-- Modal pour agrandir les images -->
     <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">

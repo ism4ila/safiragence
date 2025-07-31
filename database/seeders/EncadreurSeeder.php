@@ -14,112 +14,128 @@ class EncadreurSeeder extends Seeder
     public function run(): void
     {
         Encadreur::create([
-            'city_id' => 1,
-            'full_name' => 'Imam Hassan MAHMOUD',
-            'phone_1' => '+237 690 123 456',
-            'email' => 'hassan.mahmoud@safir.cm',
+            'city_id' => 1, // Batouri
+            'full_name' => 'DJOUBAIROU NANA',
+            'phone_1' => '674412827',
+            'email' => 'djoubairou.nana@safir.cm',
             'specialties' => 'HADJ|OUMRA|Spiritualité',
-            'notes' => 'Guide spirituel senior - 15 ans d\'expérience dans l\'accompagnement spirituel des pèlerins. Il a effectué le HADJ 8 fois et maîtrise parfaitement les rites.',
             'is_active' => true,
         ]);
 
         Encadreur::create([
-            'city_id' => 1,
-            'full_name' => 'Abdoulaye IBRAHIM',
-            'phone_1' => '+237 691 234 567',
-            'email' => 'abdoulaye.ibrahim@safir.cm',
+            'city_id' => 1, // Batouri
+            'full_name' => 'IDRISSOU HAMADOU',
+            'phone_1' => '677223713',
+            'email' => 'idrissou.hamadou@safir.cm',
             'specialties' => 'Organisation|Logistique',
-            'notes' => 'Coordinateur régional - Coordinateur expérimenté basé à Bertoua, Abdoulaye gère l\'organisation logistique des voyages pour la région ENIA.',
             'is_active' => true,
         ]);
 
         Encadreur::create([
-            'city_id' => 2,
-            'full_name' => 'Dr. Amina HASSAN',
-            'phone_1' => '+237 692 345 678',
-            'email' => 'amina.hassan@safir.cm',
-            'specialties' => 'HADJ|OUMRA|Accompagnement féminin',
-            'notes' => 'Guide spirituelle - Dr. Amina se spécialise dans l\'accompagnement des groupes féminins lors des pèlerinages. Médecin de formation, elle assure aussi le suivi médical.',
+            'city_id' => 2, // Bertoua
+            'full_name' => 'ADAMOU ABDOULLAHI',
+            'phone_1' => '699664921',
+            'email' => 'adamou.abdoullahi@safir.cm',
+            'specialties' => 'HADJ|OUMRA|Accompagnement',
             'is_active' => true,
         ]);
 
         Encadreur::create([
-            'city_id' => 2,
-            'full_name' => 'Mohamed BAKARI',
-            'phone_1' => '+237 693 456 789',
-            'email' => 'mohamed.bakari@safir.cm',
-            'specialties' => 'Vente|Conseil|Relations clients',
-            'notes' => 'Responsable commercial - Responsable de l\'équipe commerciale de Yaoundé, Mohamed conseille les clients sur les meilleures formules de voyage.',
+            'city_id' => 6, // Garoua et Rey
+            'full_name' => 'CHEHOU OUSMANOU MANA',
+            'phone_1' => '690661872',
+            'email' => 'chehou.ousmanou@safir.cm',
+            'specialties' => 'Vente|Conseil',
             'is_active' => true,
         ]);
 
         Encadreur::create([
-            'city_id' => 3,
-            'full_name' => 'Imam Ousmane FALL',
-            'phone_1' => '+237 694 567 890',
-            'email' => 'ousmane.fall@safir.cm',
-            'specialties' => 'HADJ|OUMRA|Formation spirituelle',
-            'notes' => 'Guide spirituel - Avec 18 ans d\'expérience, Imam Ousmane est l\'un de nos guides les plus expérimentés. Il forme également les nouveaux encadreurs.',
+            'city_id' => 6, // Garoua-Boulai
+            'full_name' => 'OUSMANOU HAMADOU',
+            'phone_1' => '675655329',
+            'email' => 'ousmanou.hamadou@safir.cm',
+            'specialties' => 'HADJ|OUMRA|Formation',
             'is_active' => true,
         ]);
 
         Encadreur::create([
-            'city_id' => 3,
-            'full_name' => 'Fatima DIALLO',
-            'phone_1' => '+237 695 678 901',
-            'email' => 'fatima.diallo@safir.cm',
-            'specialties' => 'Logistique|Organisation|Suivi groupe',
-            'notes' => 'Coordinatrice logistique - Fatima coordonne la logistique des départs depuis Douala et assure le suivi des groupes pendant le voyage.',
+            'city_id' => 6, // Garoua-Boulai
+            'full_name' => 'ABOUBAKAR ALI',
+            'phone_1' => '699272631',
+            'email' => 'aboubakar.ali@safir.cm',
+            'specialties' => 'Logistique|Suivi',
             'is_active' => true,
         ]);
 
         Encadreur::create([
-            'city_id' => 4,
-            'full_name' => 'Ibrahim FOFANA',
-            'phone_1' => '+237 696 789 012',
-            'email' => 'ibrahim.fofana@safir.cm',
-            'specialties' => 'HADJ|OUMRA|Langues locales',
-            'notes' => 'Guide régional - Ibrahim maîtrise plusieurs langues locales de la région Ouest et facilite la communication avec les pèlerins locaux.',
+            'city_id' => 4, // Mandjou
+            'full_name' => 'OUSTAZ SALE',
+            'phone_1' => '675042190',
+            'email' => 'oustaz.sale@safir.cm',
+            'specialties' => 'HADJ|OUMRA|Langues',
             'is_active' => true,
         ]);
 
         Encadreur::create([
-            'city_id' => 5,
-            'full_name' => 'Alhadji Musa TANKO',
-            'phone_1' => '+237 697 890 123',
-            'email' => 'musa.tanko@safir.cm',
+            'city_id' => 4, // Mandjou
+            'full_name' => 'ALH SOUAIBOU HAROUNA',
+            'phone_1' => '657574516',
+            'email' => 'alh.souaibou@safir.cm',
             'specialties' => 'HADJ|OUMRA|Anglais',
-            'notes' => 'Guide spirituel - Guide bilingue français-anglais, Alhadji Musa accompagne les pèlerins anglophones du Nord-Ouest.',
             'is_active' => true,
         ]);
 
         Encadreur::create([
-            'city_id' => 6,
-            'full_name' => 'Mahamat ALI',
-            'phone_1' => '+237 698 901 234',
-            'email' => 'mahamat.ali@safir.cm',
-            'specialties' => 'HADJ|OUMRA|Arabe|Organisation',
-            'notes' => 'Coordinateur Nord - Coordinateur pour les régions du Nord, Mahamat parle couramment l\'arabe et facilite les démarches en Arabie Saoudite.',
+            'city_id' => 8, // Ngaoundéré
+            'full_name' => 'ADAMOU ABOUBAKAR GORDI',
+            'phone_1' => '679829923',
+            'email' => 'adamou.aboubakar@safir.cm',
+            'specialties' => 'HADJ|OUMRA|Arabe',
             'is_active' => true,
         ]);
 
         Encadreur::create([
-            'city_id' => 7,
-            'full_name' => 'Hadja Aïcha MOUSSA',
-            'phone_1' => '+237 699 012 345',
-            'email' => 'aicha.moussa@safir.cm',
-            'specialties' => 'OUMRA|Accompagnement féminin|Conseil',
-            'notes' => 'Guide féminine - Hadja Aïcha se spécialise dans l\'accompagnement des femmes lors des pèlerinages et offre des conseils personnalisés.',
+            'city_id' => 8, // Ngaoundéré
+            'full_name' => 'DALAILOU BIA',
+            'phone_1' => '679632298',
+            'email' => 'dalailou.bia@safir.cm',
+            'specialties' => 'OUMRA|Accompagnement féminin',
             'is_active' => true,
         ]);
 
         Encadreur::create([
-            'city_id' => 8,
-            'full_name' => 'Amadou HAMADOU',
-            'phone_1' => '+237 690 123 789',
-            'email' => 'amadou.hamadou@safir.cm',
-            'specialties' => 'HADJ|OUMRA|Spiritualité|Formation',
-            'notes' => 'Guide spirituel - Guide expérimenté de l\'Adamaoua, Amadou combine spiritualité et formation pratique pour préparer les pèlerins.',
+            'city_id' => 8, // Ngaoundéré
+            'full_name' => 'IBRAHIM AHMED',
+            'phone_1' => '679623450',
+            'email' => 'ibrahim.ahmed@safir.cm',
+            'specialties' => 'HADJ|OUMRA|Spiritualité',
+            'is_active' => true,
+        ]);
+
+        Encadreur::create([
+            'city_id' => 8, // Ngaoundéré
+            'full_name' => 'OUSTAZ MAHMOUD GONI',
+            'phone_1' => '699851911',
+            'email' => 'oustaz.mahmoud@safir.cm',
+            'specialties' => 'HADJ|OUMRA|Formation',
+            'is_active' => true,
+        ]);
+
+        Encadreur::create([
+            'city_id' => 3, // Yaoundé
+            'full_name' => 'MOUHAMADOU HABIB',
+            'phone_1' => '699933153',
+            'email' => 'mouhamadou.habib@safir.cm',
+            'specialties' => 'HADJ|OUMRA|Spiritualité',
+            'is_active' => true,
+        ]);
+
+        Encadreur::create([
+            'city_id' => 3, // Yaoundé
+            'full_name' => 'SAIDOU BAOURO',
+            'phone_1' => '699988201',
+            'email' => 'saidou.baouro@safir.cm',
+            'specialties' => 'Organisation|Logistique',
             'is_active' => true,
         ]);
     }

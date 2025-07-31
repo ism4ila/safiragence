@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('phone_1');
             $table->string('email');
             $table->string('specialties');
-            $table->text('notes');
+            
             $table->boolean('is_active')->default(true);
             $table->timestamps();
         });
